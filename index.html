@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABS-CBN LOGO</title>
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body onload="pageload()">
+    <canvas id="mycanvas" width="1251" height="640" style="border: solid;">
+        Your browser does not support HTML5 Canvas. Please shift to a newer browser.
+    </canvas>
+    <script type="text/javascript">
+        const canvas = document.getElementById("mycanvas")
+        const context = canvas.getContext("2d")
+
+        context.beginPath();
+        context.arc(630, 245, 240, 0, 2 * Math.PI, true)
+        context.fillStyle = "red";
+        context.fill();
+
+        context.beginPath();
+        context.arc(630, 245, 205, 0, 2 * Math.PI, true)
+        context.fillStyle = "white";
+        context.fill();
+
+        context.beginPath();
+        context.arc(630, 245, 170, 0, 2 * Math.PI, true)
+        context.fillStyle = "green";
+        context.fill();
+
+        context.beginPath();
+        context.arc(630, 245, 135, 0, 2 * Math.PI, true)
+        context.fillStyle = "white";
+        context.fill();
+
+        context.beginPath();
+        context.arc(630, 245, 100, 0, 2 * Math.PI, true)
+        context.fillStyle = "blue";
+        context.fill();
+
+        context.beginPath();
+        context.arc(630, 245, 65, 0, 2 * Math.PI, true)
+        context.fillStyle = "white";
+        context.fill();
+
+        context.clearRect(601.5, 250, 58, 400);
+        context.fillStyle = "black";
+        context.fillRect(613, 245, 35, 270);
+
+        context.font = "120px Rotis Semi"
+        context.fillText("ABS-CBN", 376, 620);
+        
+    </script>
+</body>
+</html>
